@@ -1,33 +1,33 @@
 pipeline {
     agent any
 
-    stage {
+    stages {
        steps {
           echo "SCM checkout"
        }
     }
 
-    stage {
+    stages {
        steps {
           echo "build"
        }
     }
-    stage {
+    stages {
        steps {
           echo "build war file"
        }
     }
-    stage {
+    stages {
        steps {
           echo "test"
        }
     }
-    stage {
+    stages {
        steps {
           echo "upload artifact to nexus"
        }
     }
-    stage {
+    stages {
        steps {
           echo "build"
        }
